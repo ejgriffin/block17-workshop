@@ -38,6 +38,7 @@ const orderTotal = coffeeMenu.reduce((acc, currentValue) => {
 // console.log(orderTotal);
 
 // Print an array with all the drinks that are seasonal.
+// use filter function
 
 const seasonalDrinks = coffeeMenu.filter((item) => {
   return item.seasonal;
@@ -48,4 +49,10 @@ const seasonalDrinks = coffeeMenu.filter((item) => {
 //     console.log(`${item.name} with imported beans!`)
 // })
 
-seasonalDrinks;
+//Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
+// use map function and const for seasonalDrinks
+
+seasonalDrinks.map((item) => {
+  console.log(`${item.name} with imported beans`);
+});
+console.log(seasonalDrinks.map(printNames));
